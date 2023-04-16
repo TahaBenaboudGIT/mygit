@@ -41,6 +41,9 @@ To execute the project, you need to run the following command:
 * `commit`: create a new commit
   * `branch`: the name of the branch
   * `-m <message>`: the message of the commit ***(optional)***
+* `merge`: merge the specified one to  the current branch, the specified branch will then be deleted 
+  * `branch`: the name of the branch to merge with the current branch
+  * `-m <message>`: the message of the merge ***(optional)***
 
 ### Date
 
