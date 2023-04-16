@@ -133,4 +133,6 @@ int checkout_commit_handle_args(int argc, char **argv);
  */
 int merge_handle_args(int argc, char **argv);
 
+int help_handle_args(int argc, char **argv);
+
 #endif

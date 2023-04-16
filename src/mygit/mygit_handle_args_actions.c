@@ -15,6 +15,7 @@
 #include "libs/file/get_path_absolute.h"
 #include "libs/file/list_files.h"
 #include "merge/mygit_merge.h"
+#include "mygit/mygit_help.h"
 #include "refs/refs.h"
 #include "utils/utils.h"
 #include <stdio.h>
@@ -265,4 +266,13 @@ int merge_handle_args(int argc, char **argv)
   }
   mygit_merge(argv[2], argv[3]);
   return 0;
+}
+
+int help_handle_args(int argc, char **argv)
+{
+  (void)argv;
+  (void)argc;
+  mygit_help();
+  return 0;
+  
 }
