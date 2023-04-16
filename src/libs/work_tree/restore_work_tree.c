@@ -32,13 +32,13 @@ static void set_content_file_mode_and_hash(work_file_t *wf,
                                            const char *path_blob,
                                            const char *path)
 {
-  char *path_absolue_file = NULL;
+  char *path_absolute_file = NULL;
   if (!wf || !path_blob || !path)
     return;
-  path_absolue_file = get_path_absolute(path, wf->name);
-  copy_file(path_absolue_file, path_blob);
-  set_chmod(path_absolue_file, wf->mode);
-  free(path_absolue_file);
+  path_absolute_file = get_path_absolute(path, wf->name);
+  copy_file(path_absolute_file, path_blob);
+  set_chmod(path_absolute_file, wf->mode);
+  free(path_absolute_file);
 }
 
 static void create_dir_if_doesnt_exist(const char *path, const char *name,
